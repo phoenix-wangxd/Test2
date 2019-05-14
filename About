@@ -5,8 +5,6 @@
 # 版本：V1.0
 
 
-```bash
-
 pwd
 ls
 cd
@@ -14,7 +12,3 @@ grep
 find
 ps -ef
 top
-
-
-
-```
