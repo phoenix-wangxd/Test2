@@ -1,10 +1,10 @@
 " Configuration file for vim
-set modelines=0		" CVE-2007-2438
+set modelines=0  " CVE-2007-2438
 
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
+set nocompatible " Use Vim defaults instead of 100% vi compatibility
+set backspace=2  " more powerful backspacing
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
@@ -17,28 +17,29 @@ let skip_defaults_vim=1
 "------------------------------------------以下是wxd补充的-----------------------------------------------
 " 常用的配置
 
-set autoindent							" 创建新行的时候使用与上一行同样的缩进
-set smartindent							" 创建新行时使用智能缩进
-set tabstop=4							" 设置制表符 (TAB) 的宽度（以空格的数量表示）
-set softtabstop=4						" 设置软制表符等于4个空格
-set shiftwidth=4						" 设置移位操作 >> 或 << 的缩进长度（以空格的数量表示）
+set autoindent                          " 创建新行的时候使用与上一行同样的缩进
+set smartindent                         " 创建新行时使用智能缩进
+set tabstop=4                           " 设置制表符 (TAB) 的宽度（以空格的数量表示）
+set softtabstop=4                       " 设置软制表符等于4个空格
+set shiftwidth=4                        " 设置移位操作 >> 或 << 的缩进长度（以空格的数量表示）
 
-set foldmethod=indent					" 设置折叠方式
-syntax on								" 设置开启语法高亮
-filetype on								" 设置侦测文件类型
+set foldmethod=indent                   " 设置折叠方式
+syntax on                               " 设置开启语法高亮
+filetype on                             " 设置侦测文件类型
 
-set number								" 显示行号
-set textwidth=80						" 要在文本行超过一定长度时自动换行
-set wrapmargin=2						" 要根据从窗口右侧向左数的列数来自动换行
-set showmatch							" 当光标遍历文件时经过括号时，高亮标识匹配的括号
+set number                              " 显示行号
+set textwidth=80                        " 要在文本行超过一定长度时自动换行
+set wrapmargin=2                        " 要根据从窗口右侧向左数的列数来自动换行
+set showmatch                           " 当光标遍历文件时经过括号时，高亮标识匹配的括号
 
 
-set hlsearch							" 在搜索时候，按下回车键以后，高亮所有匹配项
-set incsearch							" 增量高亮搜索，在搜索中，每输入一个字符，都自动高亮匹配项
+set hlsearch                            " 在搜索时候，按下回车键以后，高亮所有匹配项
+set incsearch                           " 增量高亮搜索，在搜索中，每输入一个字符，都自动高亮匹配项
 
 
 " ----------------------------------------------
 " 常用的映射
+
 " 使用sudo进行强制的写入
 cnoremap w!! w !sudo tee % >/dev/null
 
