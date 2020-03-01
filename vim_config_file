@@ -20,12 +20,12 @@ let skip_defaults_vim=1
 set autoindent							" 创建新行的时候使用与上一行同样的缩进
 set smartindent							" 创建新行时使用智能缩进
 set tabstop=4							" 设置制表符 (TAB) 的宽度（以空格的数量表示）
-set softtabstop=4                       " 设置软制表符等于4个空格
+set softtabstop=4						" 设置软制表符等于4个空格
 set shiftwidth=4						" 设置移位操作 >> 或 << 的缩进长度（以空格的数量表示）
 
 set foldmethod=indent					" 设置折叠方式
-syntax on                               " 设置开启语法高亮
-filetype on                             " 设置侦测文件类型
+syntax on								" 设置开启语法高亮
+filetype on								" 设置侦测文件类型
 
 set number								" 显示行号
 set textwidth=80						" 要在文本行超过一定长度时自动换行
